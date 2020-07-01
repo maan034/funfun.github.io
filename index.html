@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        
+        body
+        {
+        background-color:black;
+        }
+        header
+        {font-size:40px;
+        background-color:grey;
+        display: block;
+        padding:35px;
+        }
+        #foot{
+
+        font-size:20px;
+        background-color:grey;
+        display: block;
+        
+        }
+        #image{
+        margin-top: 15px;
+        margin-bottom: -200px
+        }
+        #text{
+            background-color:grey;
+            color:black;
+             padding:35px;
+           display: inline-block;
+           margin-left: 390px;
+        margin-bottom: 85px;
+        }
+        #btn{
+            background-color:grey;
+            color:black;
+        }
+        #moni1{
+        color:black;  
+        background-color:teal;
+         display: inline-block;  
+        }
+         #moni2{
+        color:black;  background-color:teal;
+         display: inline-block;  
+        }
+         #moni3{
+        color:white;    background-color:teal;
+         display: inline-block;}
+         #moni4{
+        color:black;  display: inline-block;   
+        background-color:teal;}
+         #moni5{background-color:teal;
+        color:black;  display: inline-block;   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>MONIKA CHAUHAN</center>
+    </header>
+    <main>
+        <div id="image">
+    <img src="image/MONI2.jpg" height="250px" weidth="250px">
+</div>
+<div id="text">I M A VERY HARDWORKING AND<br>
+PASSIONATE GIRL PURSUING MY GRADUATION.I AM NOT DIFFERENT 
+<br>FROM OTHER STUDENTS BUT I AM ME!!I LOVE COMPETITIVE CODING 🖥,FRONTEND DEVELOPEMENT ,DANCING🎊💃💃 AND MAKING FUN VIDEOS IF U WANT TO SEE  (check this:-:<a href="https://www.youtube.com/results?search_query=hit+mrp+vines">HIT MRP VINES</a> ). MOST IMPORTANT,I AM A LEARNER 🤠💻🖱🖥</div>
+    
+</main>
+ <a href="https://www.youtube.com/results?search_query=hit+mrp+vines"></a>
+<button id="btn" onclick="myfun1()">PROJECTS</button><br>
+<p id="moni1" ><a href="www.google.com"></a></p>
+<br>
+<button  id="btn" onclick="myfun2()">RESUME</button><br>
+<p id="moni2" ></p>
+<br>
+<h1 style="color:white">chlo ek chhota sa game🤔 nhi game to nhi kahenge isse lekin dekhlo jo bhi  hai 🎃😅😂😂</h1>
+
+<style>
+    #container{
+        width:500px;
+        height:500px;
+        background-color:grey;
+        position:relative;}
+    #animate1{width:100px;
+        height:100px;
+        background-color: white;
+        position:absolute;
+    }
+    #animate2{width:100px;
+        height:100px;
+        background-color: blue;
+        position:absolute;
+    }
+    #animate3
+    {
+        width:100px;
+        height:100px;
+        background-color:green;
+        position:absolute;
+    }
+    #animate4{width:100px;
+        height:100px;
+        background-color:red;
+        position:absolute;
+    }
+</style>
+<p><button onclick="my()">clickme!</button></p>
+<div id="container"><div id="animate1">box1</div><div id="animate2">box 2</div><div id="animate3">box 3</div><div id="animate4">box 4</div></div>
+<script>
+    function my()
+    {
+    var e1=document.getElementById("animate1");
+    var e2=document.getElementById("animate2");
+    var e3=document.getElementById("animate3");
+    var e4=document.getElementById("animate4");
+    var pos1=0,pos2=0,pos3=0,pos4=0;
+    var id1=setInterval(frame,5);
+    var id2=setInterval(frame,5);
+    var id3=setInterval(frame,5);
+    var id4=setInterval(frame,5);
+    function frame(){
+        if(pos1==400&&pos2==400&&pos3==400&&pos4==400)
+        {
+            clearInterval(id1);
+            clearInterval(id2);
+            clearInterval(id3);
+            clearInterval(id4);
+        }
+        
+        
+        else 
+        {
+            pos1++;pos2++;pos3++;pos4++;
+
+            e1.style.top=pos1+"px";
+            e1.style.right=pos1+"px";
+
+            e2.style.top=pos2+"px";
+            e2.style.left=pos2+"px";
+
+            e3.style.bottom=pos3+"px";
+            e3.style.right=pos3+"px";
+
+            e4.style.bottom=pos4+"px";
+            e4.style.left=pos4+"px";
+
+        }
+    }
+    }
+    </script>
+<button  id="btn" onclick="myfun3()">EDUCATION</button><br>
+<p id="moni3"></p>
+<br>
+<button  id="btn" onclick="myfun4()">CONTACT</button><br>
+<p id="moni4"></p>
+<br>
+
+<script>
+function myfun1()
+{
+document.getElementById("moni1").innerHTML= "PROJECT"+"<br>"+"jo apn bnayenge na vo laga dungi 🤗🤗🤩"
+}
+function myfun2()
+{
+document.getElementById("moni2").innerHTML = "RESUME"+"<br>"+"jab bnayungi tab likh dungi😂😂";
+}
+function myfun3()
+{
+document.getElementById("moni3").innerHTML = "EDUCATION"+"<br>"+"PASSED MY 10TH FROM ROSE VILLA HIGH SCHOOL,NARNAUL,HARYANA"+"<br>"+"PASSED MY 12TH FROM BR SIKSHAN SANSTHAN ,SIKAR ,RAJASTHAN"+"<br>"+"ABHI TUMHARE SATH B.TECH KAR RHI HU😍😍😍😊"+"<br>";
+}
+function myfun4()
+{
+document.getElementById("moni4").innerHTML = "neeche dekho neehe 👀👀footer me ";
+}
+
+</script>
+
+<br>
+<button id="moni1"onclick="window.print()">Print this page</button>
+<center><footer id= "foot">
+<h2>👇WANNA CONTACT ME👇</h2><br>
+<h3>9306741251</h3>
+<a href="https://www.facebook.com/profile.php?id=100028048755779 "><img src="image\facebook.png" width="50px" height="50px"></a><!-- facebook-->
+<a href="https://github.com/maan034"><img src="image\github.png" width="50px" height="50px"></a><!-- github-->
+<a href="https://instagram.com/monika_chauhan_072?igshid=ll428ovlv7r2"><img src="image\instagram.png" width="50px" height="50px"></a><!-- instagram-->
+<a href="https://www.linkedin.com/in/monika-chauhan-252b011a7/"><img src="image\linke.png" width="50px" height="50px"></a><!-- linkedin-->
+</footer>
+</center>
+</body>
+</html>
